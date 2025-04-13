@@ -82,7 +82,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = btopcmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_space,  togglescratch,  {.v = scratchpadcmd } },
-	{ MODKEY,                       XK_b,      togglebar,      {0} },
+	{ MODKEY,                       XK_s,      togglebar,      {0} },
 	{ MODKEY,                       XK_w,      zoom,           {0} },
 	{ MODKEY,                       XK_d,      pushdown,       {0} },
 	{ MODKEY,                       XK_e,      pushup,         {0} },
@@ -128,8 +128,8 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_x,                      10)
 	TAGKEYS(                        XK_c,                      11)
 	TAGKEYS(                        XK_v,                      12)
-	TAGKEYS(                        XK_n,                      13)
-	TAGKEYS(                        XK_m,                      14)
+	TAGKEYS(                        XK_b,                      13)
+	TAGKEYS(                        XK_n,                      14)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
