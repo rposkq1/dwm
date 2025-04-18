@@ -71,8 +71,8 @@ static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34
 static const char *btopcmd[] = {"st", "btop", NULL };
 
 Autostarttag autostarttaglist[] = {
-	{.cmd = btopcmd, .tags = 1 << 8 },
-	{.cmd = termcmd, .tags = 1 << 7 },
+	{.cmd = btopcmd, .tags = 1 << 9 },
+	{.cmd = termcmd, .tags = 1 << 8 },
 	{.cmd = NULL, .tags = 0 },
 };
 
@@ -96,7 +96,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY|ShiftMask|ControlMask, XK_c,      killclient,     {0} },
+	{ MODKEY|ShiftMask,             XK_f,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_y,      setlayout,      {.v = &layouts[2]} },
