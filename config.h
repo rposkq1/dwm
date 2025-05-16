@@ -27,13 +27,8 @@ static const char *colors[][3]      = {
 static const char *tags[] = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F" };
 
 static const Rule rules[] = {
-	/* xprop(1):
-	 *	WM_CLASS(STRING) = instance, class
-	 *	WM_NAME(STRING) = title
-	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            0,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+ /* class  instance  title  tags mask  isfloating  monitor */
+    { NULL,   NULL,     NULL,  0,         0,          -1 },
 };
 
 /* layout(s) */
