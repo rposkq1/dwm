@@ -64,10 +64,12 @@ static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "sp";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 static const char *btopcmd[] = {"st", "btop", NULL };
+static const char *clockcmd[] = {"st", "clock", NULL };
 
 Autostarttag autostarttaglist[] = {
 	{.cmd = btopcmd, .tags = 1 << 9 },
 	{.cmd = termcmd, .tags = 1 << 8 },
+	{.cmd = clockcmd, .tags = 1 << 0 },
 	{.cmd = NULL, .tags = 0 },
 };
 
