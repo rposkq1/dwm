@@ -112,6 +112,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_h,      viewprev,       {0} },
 	{ MODKEY|ShiftMask,             XK_Right,  tagtonext,      {0} },
 	{ MODKEY|ShiftMask,             XK_Left,   tagtoprev,      {0} },
+	TAGKEYS(                        XK_q,                      0)
 	TAGKEYS(                        XK_0,                      0)
 	TAGKEYS(                        XK_1,                      1)
 	TAGKEYS(                        XK_2,                      2)
