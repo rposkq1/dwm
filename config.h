@@ -129,7 +129,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_v,                      13)
 	TAGKEYS(                        XK_b,                      14)
 	TAGKEYS(                        XK_n,                      15)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_BackSpace, quit,        {0} },
 };
 
 /* button definitions */
